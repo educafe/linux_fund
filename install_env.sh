@@ -54,6 +54,7 @@ echo
 echo  -e $BLUE"sudo apt-get install -y geoip-bin"$RESET
 echo
 apt-get install -y geoip-bin
+
 echo
 echo >> ~/.bashrc
-echo PS1='\[\033[32m\][\u@\h:\W]\[\033[00m\]\$ ' >> ~/.bashrc
+echo "PS1='\[\033[32m\][\u@\h:\W]\[\033[00m\]\\$ '" >> ~/.bashrc

@@ -24,7 +24,7 @@ echo "public=no" >> /etc/samba/smb.conf
 echo
 echo -e $RED"Restart smb to apply the changed configuration"$RESET
 echo
-echo -e $BLUE"sudo systemctl restart smb"$RESET
+echo -e $BLUE"sudo systemctl restart smbd"$RESET
 echo
-systemctl restart smb
+systemctl restart smbd
 echo
