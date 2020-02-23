@@ -18,7 +18,7 @@ echo "path=/home/educafe/">> /etc/samba/smb.conf
 echo "browseable=Yes" >> /etc/samba/smb.conf
 echo "writeable=Yes" >> /etc/samba/smb.conf
 echo "only guest=no" >> /etc/samba/smb.conf
-echo "create  mask=0764" >> /etc/samba/smb.conf
+echo "create  mask=0664" >> /etc/samba/smb.conf
 echo "directory mask=0775" >> /etc/samba/smb.conf
 echo "public=no" >> /etc/samba/smb.conf
 echo
