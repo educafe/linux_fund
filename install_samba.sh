@@ -1,3 +1,11 @@
+#!/bin/bash
+RED="\e[31m"
+BLUE="\e[34m"
+RESET="\e[00m"
+if [ $UID -ne 0 ]; then
+	echo "Please try again with sudo"
+	exit 2
+fi
 echo -e $RED"Install Samba Packages"$RESET
 echo
 echo  -e $BLUE"sudo apt-get install -y samba"$RESET

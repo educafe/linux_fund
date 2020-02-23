@@ -7,6 +7,12 @@ if [ $UID -ne 0 ]; then
 	exit 2
 fi
 echo
+echo  -e $RED"Install build package for gcc, make and perl"$RESET
+echo
+echo  -e $BLUE"sudo apt-get install -y gcc g++ make perl"$RESET
+echo
+apt-get install -y build-essential perl
+echo
 echo  -e $RED"Install net-tools Packages"$RESET
 echo
 echo  -e $BLUE"sudo apt-get install -y net-tools"$RESET
